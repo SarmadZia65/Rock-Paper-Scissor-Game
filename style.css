@@ -1,0 +1,133 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+h1{
+    background-color:rgb(50, 45, 77) ;
+    width: 100%;
+    text-align: center;
+    /* padding: 0.8rem; */
+    line-height:5rem;
+    /* height:5rem; */
+    color: white;
+    font-family: arial;
+}
+@media (max-width:517px){
+    h1{
+        background-color:rgb(50, 45, 77) ;
+        width: 100%;
+        text-align: center;
+        line-height:2.5rem;
+        color: white;
+        font-family: arial;
+    }
+}
+.choices{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0 1rem;
+    margin-top: 10rem;
+}
+@media (max-width:517px){
+    .choices{
+        display: flex;
+        justify-content: space-around;
+        gap: 0.5rem 0;
+        flex-wrap: wrap;
+        margin-top: 5rem;
+    }
+}
+.choices .choice{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 11rem;
+    height: 11rem;
+    border-radius: 50%;
+}
+@media (max-width:517px){
+    .choices .choice{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 7rem;
+        height: 7rem;
+        border-radius: 50%;
+        
+    }
+}
+.choices .choice:hover{
+    background-color: rgb(50, 45, 77);
+}
+.choices .choice img{
+    height: 10rem;
+    width: 10rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+@media (max-width:517px){
+    .choices .choice img{
+        height: 6rem;
+        width: 6rem;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+}
+.score-Board{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0 10rem;
+    margin-top: 5rem;
+}
+@media (max-width:517px){
+    .score-Board{
+        display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+    margin-top: 2.5rem;
+    flex-wrap: wrap;
+    }
+}
+p{
+    font-size: 3rem;
+    font-family: arial;
+}
+@media (max-width:517px){
+    p{
+        font-size: 1.5rem;
+    }
+}
+#user-score, #comp-score{
+    font-size: 5rem;
+}
+@media (max-width:517px){
+    #user-score,#comp-score{
+        font-size: 2.5rem;
+    }
+}
+#msg{
+    background-color:rgb(50, 45, 77) ;
+    color: white;
+    font-size: 2rem;
+    font-family: arial;
+    width: fit-content;
+    padding: 20px;
+    margin: 5rem auto;
+    border-radius: 10px;
+}
+@media (max-width:517px){
+    #msg{
+        background-color:rgb(50, 45, 77) ;
+        color: white;
+        font-size: 1rem;
+        font-family: arial;
+        width: fit-content;
+        padding: 10px;
+        margin: 2.5rem auto;
+        border-radius: 5px;
+    }
+}
